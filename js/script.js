@@ -105,7 +105,7 @@ if(leftPaddle.y > maxLeftPaddleY){
     ball.x += ball.dx;
     ball.y += ball.dy;
     // левая платформа двигается как мяч
-    leftPaddle.y = ball.y + leftPaddle.height / 2
+    leftPaddle.y = ball.y - leftPaddle.height / 2
 
     //коснулся ли мяч стен
     if(ball.y <= grid || ball.y + grid >= canvas.height - grid){
