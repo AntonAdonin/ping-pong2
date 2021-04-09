@@ -9,7 +9,7 @@ let paddleHeight = grid * 5;
 //Скорость платформы
 let paddleSpeed = 5;
 //Скорость мяча
-let ballSpeed = 2;
+let ballSpeed = 3.5;
 //Набранные очки
 let leftCounter = 0;
 let rightCounter = 0;
@@ -105,7 +105,7 @@ if(leftPaddle.y > maxLeftPaddleY){
     ball.x += ball.dx;
     ball.y += ball.dy;
     // левая платформа двигается как мяч
-    leftPaddle.y = ball.y - leftPaddle.height / 2
+    leftPaddle.y = ball.y + leftPaddle.height / 2
 
     //коснулся ли мяч стен
     if(ball.y <= grid || ball.y + grid >= canvas.height - grid){
